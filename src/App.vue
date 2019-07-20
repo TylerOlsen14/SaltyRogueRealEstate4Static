@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Salty logo" src="./assets/Images/logo.jpg">
-    <img alt="Salty logo" src="./assets/Images/Finn.jpg">
+    <Header />
+    <div class="container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
+import Header from './components/header'
 import About from './components/about';
 import Home from './components/home';
 import Contact from './components/contact';
@@ -13,9 +16,7 @@ import Contact from './components/contact';
 export default {
   name: 'app',
   components: {
-    About,
-    Contact,
-    Home
+    Header,
   }
 }
 
